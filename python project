@@ -1,0 +1,22 @@
+print("Welcome to Toad's maze!")
+print("Your objective is to get Toad out of the maze while avoiding running into Boos, Shy Guys, and Piranha Plants.")
+print("Let's get started, Good luck!")
+direction_1 = input("Which direction would Toad like to go, Left or Right? ")
+if direction_1  == "Left":
+  print("Toad turns left.")
+  direction_2 = input("Which direction would Toad like to go, Left, Right, or Straight? ")
+  if direction_2 == "Straight":
+    print("Toad walks straight.")
+    direction_3 = input ("Which direction would Toad like to go, Left, Right, or Straight? ")
+    if direction_3 == "Right":
+      print("Toad turns right. Congratulations, you got Toad out of the maze!")
+    elif direction_3 == "Left":
+      print("Toad turns left and encounters a Piranha Plant! Game Over!")
+    else:
+      print("Toad walks straight and encounters a Shy Guy! Game Over!")
+  elif direction_2 == "Left":
+    print("Toad turns left and encounters a Shy Guy! Game over!")
+  else:
+    print("Toad turns right and encounters a Boo! Game over!")
+else:
+  print("Toad turns right and encounters a Boo! Game over!")
